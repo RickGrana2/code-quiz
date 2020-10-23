@@ -32,3 +32,35 @@ const questions = [
         answer: 'pet'
     }
 ]
+
+// game logic
+// GLOBALS
+let currentQuestion;
+const score = ''
+
+// when a button is clicked start game
+function initGame(){
+    // init globals
+    currentQuestion = 0
+    timer()
+    loadNextQuestion(currentQuestion)
+}
+// when game starts, start countdown timer, and load first question
+function timer(){
+    console.log('timer started')
+}
+// when answer is selected, check answer against question [i] answer
+function checkAnswer(){
+    currentQuestion++
+    loadNextQuestion(currentQuestion)
+}
+// when answered if its correct increment score, if incorrect decrease timer, then load next question
+function loadNextQuestion(currentQuestionIndex){
+    console.log(questions[currentQuestionIndex])
+}
+
+// when all questions are answered get user initials, and save score to local storage
+function saveData(){
+
+}
+// ui logic
