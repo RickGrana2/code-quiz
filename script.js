@@ -13,3 +13,22 @@
 
 // WHEN the game is over
 // THEN I can save my initials and score
+
+const questions = [
+    {
+        questionNumber: 'What is Apples',
+        a: 'vegetable',
+        b: 'chicken',
+        c: 'pet',
+        d: 'fruit',
+        answer: 'fruit'
+    },
+    {
+        questionNumber: 'What is Chicken',
+        a: 'vegetable',
+        b: 'chicken',
+        c: 'pet',
+        d: 'fruit',
+        answer: 'pet'
+    }
+]
