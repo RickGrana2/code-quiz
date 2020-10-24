@@ -36,7 +36,9 @@ const questions = [
 // game logic
 // GLOBALS
 let currentQuestion;
-const score = ''
+let timer;
+let time = 100;
+let score = 0
 
 // when a button is clicked start game
 function initGame(){
@@ -46,8 +48,12 @@ function initGame(){
     loadNextQuestion(currentQuestion)
 }
 // when game starts, start countdown timer, and load first question
-function timer(){
+function runTimer(){
     console.log('timer started')
+    timer = setInterval(function(){
+        timer--
+        document.querySelector('#timer').innerHTML = timer
+    }, 1000)
 }
 // when answer is selected, check answer against question [i] answer
 function checkAnswer(){
