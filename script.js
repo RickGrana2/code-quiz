@@ -16,20 +16,20 @@
 
 const questions = [
     {
-        questionNumber: 'What is Apples',
-        a: 'vegetable',
-        b: 'chicken',
-        c: 'pet',
-        d: 'fruit',
-        answer: 'fruit'
+        questionNumber: 'Which is a musical instrument?',
+        a: 'piano',
+        b: 'cartman',
+        c: 'optimus prime',
+        d: 'karaoke',
+        answer: 'piano'
     },
     {
-        questionNumber: 'What is Chicken',
-        a: 'vegetable',
-        b: 'chicken',
-        c: 'pet',
-        d: 'fruit',
-        answer: 'pet'
+        questionNumber: 'Which is not a musical instrument?',
+        a: 'saxophone',
+        b: 'tamborine',
+        c: 'obo',
+        d: 'Xerox',
+        answer: 'Xerox'
     }
 ]
 
@@ -67,4 +67,4 @@ function saveData(){
 
 // button for initGame
 document.querySelector('#start').addEventListener('click', initGame)
-// button for each answer, runs reck answer
+// button for each answer, run check answer
