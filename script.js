@@ -64,3 +64,7 @@ function saveData(){
 
 }
 // ui logic
+
+// button for initGame
+document.querySelector('#start').addEventListener('click', initGame)
+// button for each answer, runs reck answer
